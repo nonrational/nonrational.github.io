@@ -40,6 +40,12 @@ plugins:
   - jekyll-remote-theme
   - jekyll-compose
 
+include:
+  - about.md
+  - projects.md
+
+exclude: [ Gemfile, Gemfile.lock, script/serve ]
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
