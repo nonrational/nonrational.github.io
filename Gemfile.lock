@@ -191,6 +191,10 @@ GEM
       mini_portile2 (~> 2.4.0)
     octokit (4.14.0)
       sawyer (~> 0.8.0, >= 0.5.3)
+    octopress-code-highlighter (4.3.0)
+      jekyll (~> 3.0)
+    octopress-codeblock (1.0.5)
+      octopress-code-highlighter (~> 4.2)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (2.0.5)
@@ -229,6 +233,7 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   jekyll-paginate
   jekyll-remote-theme
+  octopress-codeblock
   tale
   tzinfo-data
 

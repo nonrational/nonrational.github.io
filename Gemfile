@@ -22,6 +22,7 @@ group :jekyll_plugins do
   gem "jekyll-remote-theme"
   gem "jekyll-paginate"
   gem "jekyll-compose"
+  gem "octopress-codeblock"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

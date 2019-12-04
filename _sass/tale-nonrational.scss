@@ -1,6 +1,38 @@
 li, .nav-title {
-    -moz-transition: none !important;
-    -webkit-transition: none !important;
-    -o-transition: color 0 ease-in !important;
-    transition: none !important;
+  -moz-transition: none !important;
+  -webkit-transition: none !important;
+  -o-transition: color 0 ease-in !important;
+  transition: none !important;
 }
+
+/* clearfix */
+.clearfix:before, .clearfix:after {
+  content:"";
+  display:table;
+}
+
+.clearfix:after {
+  clear:both;
+}
+
+.clearfix {
+  zoom:1;
+}
+
+div.project-tags {
+  margin-top: -2em;
+  margin-bottom: 1em;
+  font-style: italic;
+
+  ul {
+    list-style: none;
+    padding-left: 1em;
+    font-size: .66em;
+  }
+
+  li {
+    float: left;
+    padding: 0 1em 0 0;
+  }
+}
+
