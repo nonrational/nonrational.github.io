@@ -22,11 +22,35 @@ _All the annoyance of a typewriter in your browser._
 
 {% include project-links.html project="https://nonration.al/tapding" source="https://github.com/nonrational/tapding" %}
 
+# is today prime?
+{% include project-tags.html tags="heroku javascript express-js" %}
+
+_inspired by @JohnDCook & @daniel_egan_
+
+{% include project-links.html project="https://istodayprime.herokuapp.com/" source="https://github.com/nonrational/primeday" %}
+
 # itsthefinal.co/untdown
-{% include project-tags.html tags="heroku rack youtube domain-hack" %}
+{% include project-tags.html tags="heroku rack youtube domain-hack cloudflare" %}
+
+![itsthefinal.co](/assets/images/itsthefinal-co-demo.png)
+
 {% include project-links.html project="https://itsthefinal.co/untdown" source="https://github.com/nonrational/itsthefinal.co" %}
 
 # sabbatic.al
-{% include project-tags.html tags="github-pages domain-hack gif" %}
+{% include project-tags.html tags="github-pages domain-hack gif honey-pot" %}
+
+Because everyone needs a brand for their time off, right? It's also funny to receive notes from recruiters congratulating me on the growth of my fake company.
+
+:-------------------------:|:-------------------------:
+![itsthefinal.co](/assets/images/tinkerer.png) | ![itsthefinal.co](/assets/images/sabbatical_background.png)
+
+
 {% include project-links.html project="https://sabbatic.al" source="https://github.com/nonrational/sabbatic.al" %}
+
+# newbandnameicallit
+{% include project-tags.html tags="heroku rails parks-and-rec andy-dwyer" %}
+
+> "Fleetwood Mac Sex Pants." New band name I call it. ~ Andy Dwyer
+
+{% include project-links.html project="https://newbandnameicallit.com" source="https://github.com/nonrational/dwyer" %}
 
