@@ -17,6 +17,7 @@ gem "tale"
 gem "github-pages", group: :jekyll_plugins
 
 gem "nokogiri", ">= 1.10.8"
+gem "jekyll", ">= 3.6.3"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
