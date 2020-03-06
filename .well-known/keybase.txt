@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/nonrational
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://nonration.al
+  * I am nonrational (https://keybase.io/nonrational) on keybase.
+  * I have a public key ASAFD928rEDk77ZWqIC5szLO3GMkbHHZfJdYX1zq4kEP7Ao
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01018a49b9cbb395ccdc68835774deee4bea93099c7e4264bd05e987166f3baa731f0a",
+      "host": "keybase.io",
+      "kid": "0120050fddbcac40e4efb656a880b9b332cedc63246c71d97c97585f5ceae2410fec0a",
+      "uid": "ba7fce039014b402022cf76ef78fe100",
+      "username": "nonrational"
+    },
+    "merkle_root": {
+      "ctime": 1583509538,
+      "hash": "8014d6b462ffea5330a339c76ef6367c93d57c80d9780ba7047e21c67755dfb9f382faff578b27fb6c2b371cd5c03f9ce6b4275b1bd2bce3663b858719090546",
+      "hash_meta": "d7b7fd863f41b44a1adb14c44579a25918973fbd91767be89d06b321443fc146",
+      "seqno": 15087771
+    },
+    "service": {
+      "entropy": "OC6YmV37yPlRq8/a66N/ZUF4",
+      "hostname": "nonration.al",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.2.1"
+  },
+  "ctime": 1583509544,
+  "expire_in": 504576000,
+  "prev": "f563992879d4121918f78730db6c35461cf97ccf291d29574fd4696be1db5435",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgBQ/dvKxA5O+2VqiAubMyztxjJGxx2XyXWF9c6uJBD+wKp3BheWxvYWTESpcCCMQg9WOZKHnUEhkY94cw22w1Rhz5fM8pHSlXT9Rpa+HbVDXEIBExyUSWnIbXSMRRfAboqa8gkFdrnOIml7vYjSfntxvyAgHCo3NpZ8RAfoOQPv3VfHAxafUcW/XbJB6BIEOKFeLQgUjfJ/LOPXDjXsY5WNoe56co6hpxXeTKY8qM9h9VTIoydKwmVp8RAqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIFEFiNgoPYafXpJre7+pKoICTp+7ZS3ZgrHBs+KflbC/o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/nonrational
+
+==================================================================
