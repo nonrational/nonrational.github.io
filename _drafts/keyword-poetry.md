@@ -20,3 +20,10 @@ long volatile nights;
 protected unsafe event is dangerous;
 ```
 
+### JavaScript
+
+h/t @RickDT
+
+```haskell
+{...props} not hate
+```
