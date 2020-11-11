@@ -16,13 +16,13 @@ long volatile nights;
 
 ### C#
 
-```c#
+```csharp
 protected unsafe event is dangerous;
 ```
 
 ### JavaScript
 
-h/t @RickDT
+h/t [@RickDT](https://github.com/RickDT)
 
 ```haskell
 {...props} not hate
