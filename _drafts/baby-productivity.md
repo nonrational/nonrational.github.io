@@ -1,6 +1,6 @@
 ---
 layout: post
-title: baby productivity
+title: Baby Productivity
 ---
 
 ![baby](/assets/images/baby-productivity.png){:class="img-responsive"}
