@@ -3,4 +3,4 @@ layout: post
 title: Baby Productivity
 ---
 
-![baby](/assets/images/baby-productivity.png){:class="img-responsive"}
+![baby](/assets/images/baby_productivity.png){:class="img-responsive"}
