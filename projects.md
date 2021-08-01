@@ -14,7 +14,7 @@ _For when you need to send secrets to people that don't have GPG keys._
 {% include project-links.html project="https://www.npmjs.com/package/privnote-cli" source="https://github.com/nonrational/privnote-cli" %}
 
 # tapding
-{% include project-tags.html tags="github-pages javascript" %}
+{% include project-tags.html tags="gh-pages javascript" %}
 
 _All the annoyance of a typewriter in your browser._
 
@@ -23,14 +23,14 @@ _All the annoyance of a typewriter in your browser._
 {% include project-links.html project="https://nonration.al/tapding" source="https://github.com/nonrational/tapding" %}
 
 # is today prime?
-{% include project-tags.html tags="heroku javascript express-js" %}
+{% include project-tags.html tags="gh-pages react cloudflare" %}
 
-_inspired by @JohnDCook & @daniel_egan_
+_inspired by @JohnDCook's [Today's a Prime Day](https://www.johndcook.com/blog/2013/11/29/todays-a-prime-day/) & @daniel_egan_
 
-{% include project-links.html project="https://istodayprime.herokuapp.com/" source="https://github.com/nonrational/primeday" %}
+{% include project-links.html project="https://nonration.al/istodayprime/" source="https://github.com/nonrational/istodayprime" %}
 
 # itsthefinal.co/untdown
-{% include project-tags.html tags="heroku rack youtube domain-hack cloudflare" %}
+{% include project-tags.html tags="gh-pages react domain-hack cloudflare" %}
 
 ![itsthefinal.co](/assets/images/itsthefinal-co-demo.png)
 
