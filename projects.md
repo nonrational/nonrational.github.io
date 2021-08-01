@@ -27,7 +27,7 @@ _All the annoyance of a typewriter in your browser._
 
 _inspired by @JohnDCook's [Today's a Prime Day](https://www.johndcook.com/blog/2013/11/29/todays-a-prime-day/) & @daniel_egan_
 
-{% include project-links.html project="https://nonration.al/istodayprime/" source="https://github.com/nonrational/istodayprime" %}
+{% include project-links.html project="https://nonration.al/istodayprime" source="https://github.com/nonrational/istodayprime" %}
 
 # itsthefinal.co/untdown
 {% include project-tags.html tags="gh-pages react domain-hack cloudflare" %}
