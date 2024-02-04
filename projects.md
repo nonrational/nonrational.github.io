@@ -46,11 +46,3 @@ Because everyone needs a brand for their time off, right? It's also funny to rec
 
 
 {% include project-links.html project="https://sabbatic.al" source="https://github.com/nonrational/sabbatic.al" %}
-
-# newbandnameicallit
-{% include project-tags.html tags="heroku rails parks-and-rec andy-dwyer" %}
-
-> "Fleetwood Mac Sex Pants." New band name I call it. ~ Andy Dwyer
-
-{% include project-links.html project="https://newbandnameicallit.com" source="https://github.com/nonrational/dwyer" %}
-
