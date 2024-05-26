@@ -23,6 +23,7 @@ GEM
     commonmarker (0.23.10)
     concurrent-ruby (1.2.3)
     connection_pool (2.4.1)
+    csv (3.3.0)
     dnsruby (1.72.1)
       simpleidn (~> 0.2.1)
     drb (2.2.1)
@@ -37,6 +38,8 @@ GEM
       faraday-net_http (>= 2.0, < 3.2)
     faraday-net_http (3.1.0)
       net-http
+    faraday-retry (2.2.1)
+      faraday (~> 2.0)
     ffi (1.16.3)
     forwardable-extended (2.6.0)
     gemoji (4.1.0)
@@ -278,6 +281,7 @@ GEM
       concurrent-ruby (~> 1.0)
     unicode-display_width (1.8.0)
     uri (0.13.0)
+    webrick (1.8.1)
 
 PLATFORMS
   aarch64-linux
@@ -288,6 +292,8 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  csv
+  faraday-retry
   github-pages
   jekyll
   jekyll-compose
@@ -297,6 +303,7 @@ DEPENDENCIES
   nokogiri
   octopress-codeblock
   tale
+  webrick
 
 BUNDLED WITH
    2.5.10

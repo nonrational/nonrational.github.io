@@ -18,6 +18,7 @@ gem "github-pages", group: :jekyll_plugins
 
 gem "nokogiri"
 gem "jekyll"
+gem "csv"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
@@ -26,6 +27,11 @@ group :jekyll_plugins do
   gem "jekyll-paginate"
   gem "jekyll-compose"
   gem "octopress-codeblock"
+end
+
+group :development do
+  gem 'faraday-retry'
+  gem 'webrick'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
