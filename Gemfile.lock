@@ -289,12 +289,12 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll (>= 3.6.3)
+  jekyll
   jekyll-compose
   jekyll-feed
   jekyll-paginate
   jekyll-remote-theme
-  nokogiri (>= 1.10.8)
+  nokogiri
   octopress-codeblock
   tale
 
