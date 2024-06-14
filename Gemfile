@@ -32,6 +32,7 @@ end
 group :development do
   gem 'faraday-retry'
   gem 'webrick'
+  gem 'standard'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
