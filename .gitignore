@@ -3,3 +3,4 @@ _site
 .jekyll-metadata
 .ruby-version
 .tool-versions
+node_modules
