@@ -1,86 +1,117 @@
 ---
 layout: post
-title: my favorite git aliases
+title: My Favorite `git` Aliases
 ---
 
-1. `git co` - checkout
-2. `git f` - fetch everything (including tags) from origin
-3. `git up` - fetch and update all local branches. if you're on a feature branch, `main` will be updated locally.
-4. `git reset` - unstage all changes
-5. `git push` - push current branch to origin
-6. `git nuke` - unstage and discard all changes, including untracked files
-7. `git merge` - merge the specified branch into the current branch
-8. `git add` - stage changes in a particular file or directory
-9. `git rio` - rebase interactive with origin/main
-10. `git branch` - list all branches
-11. `git stash` - stash changes
-12. `git aww` - Stage changes in files matching a pattern. "Add where wildcard"
-13. `git sww` - "Switch where wildcard" - checkout a branch matching a pattern
-14. `git pull` - pull changes from origin
-15. `git checkout` - checkout a branch
-16. `git amend` - short for `commit --amend`
-17. `git grep` - search for a pattern in the working directory
-18. `git dfo` - List the files that differ between the current HEAD and origin/main
-19. `git broom` - remove all local branches that do not exist on origin
-20. `git lb` - list local branches, sorted by the last modified date.
-21. `git ri` - rebase interactive against a specified ref
+<img src='image.png' alt='A photo of a cat.'  />
 
 
-## Combos
 
-`git lb` + `git sww` - List the branches that I've been working on recently and switch to one of them based on a keyword.
+I saw [this post from @b0rk](https://social.jvns.ca/@b0rk/111947630524025209) a while back, and figured I'd share my own favorite `git` aliases. Gary Bernhardt was the original inspiration for my config back in 2012, and I've been tweaking it ever since.
 
-`
+All these aliases are in my `~/.gitconfig` file, available at [nonrational/dotfiles](https://github.com/nonrational/dotfiles).
 
+## Alias Groups
+
+### Short Core Commands
+
+There are 5-6 commands that I use dozens of times a day, and using shorter aliases helps me move faster.
+
+```sh
+git st  # `status`
+git ci  # `commit`
+git aa  # `add --all`
+git co  # `checkout`
+git pp  # `push`
+git f   # `fetch --tags --prune`
 ```
-1046 git co
- 430 git f
- 284 git up;
+
+### More "Ignore" Options
+
+Sometimes I want to preserve a change locally that I never intend to commit.
+
+```sh
+git disregard  # Ignore any changes to a tracked file.
+git dissed     # List all files that have been disregarded.
+git attend     # Stop ignoring changes to a file that was previously disregarded.
+
+git is-it-just-me # Ignore an untracked file without adding it to `.gitignore`.
+```
+
+### Keep Things Tidy
+
+I often work on several branches at the same time and stale branches inevitably clutter up my local environment.
+
+```sh
+git broom           # Remove all local branches with my personal prefix that do not exist on origin.
+git spring-cleaning # Remove all branches with my personal prefix, both remote and local.
+git everybody-out   # Remove all local branches that do not begin with my personal prefix.
+```
+
+## Frequency Analysis
+
+```sh
+# Print my top 50 most frequently used `git` commands
+history | awk '/ git / {print $2,$3}' | grep git | sort | uniq -c | sort -r | head -n30
+```
+
+My top 30 git commands, with aliases explained.
+
+```sh
+6388 git st      # Fewer characters to type than `status`.
+1619 git ci      # Fewer characters to type than `commit`.
+1545 git r       # Show the last 10 commits with `pretty_git_log`.
+1507 git aa      # Stage all changes in the current directory and subdirectories.
+1469 git co      # Fewer characters to type than `checkout`.
+1277 git pp      # Fewer characters to type than `push`.
+ 932 git up      # Use `hub sync` to fetch and fast-forward *all* local branches, not just the current one.
+ 434 git f       # Fetch everything from origin, including tags, and prune deleted branches.
+ 287 git diff
  250 git reset
  241 git push
- 211 git nuke
+ 211 git nuke    # Unstage and discard all changes, including deleting untracked files.
  177 git merge
- 170 git add
- 140 git rio
- 138 git branch
+ 173 git add
+ 141 git rio     # Rebase the current branch interactively against origin/main.
+ 139 git branch
+ 132 git aww     # Stage all modified or added files matching a pattern.
  131 git stash
- 130 git aww
- 123 git sww
+ 126 git sww     # Switch to a branch matching a pattern.
   99 git pull
-  95 git checkout
-  90 git amend
+  90 git amend   # Fewer characters to type than `commit --amend`.
   86 git grep
-  85 git dfo
-  81 git diff
-  81 git broom
-  80 git lb
-  78 git ri
-  66 git b
-  59 git t
+  85 git dfo     # List only the files that differ between the current HEAD and origin/main.
+  82 git lb      # List local branches with a relative modified date, recently modified first.
+  81 git broom   # Remove all local branches that do not exist on origin.
+  78 git ri      # Fewer characters to type than `rebase --interactive`.
   56 git rebase
-  52 git show
-  49 git s
-  44 git l
-  40 git ci
-  34 git rev-parse
-  25 git brr
-  20 git revert
-  20 git df
-  19 git cherry-pick
-  18 git log
-  17 git p
-  16 gitst
-  16 git
-  14 git git
-  13 git modified
-  12 git a
-  11 git untracked
-  11 git clone
-  10 gits t
-  10 git remote
-  10 git i
-   9 git tag
-   8 git u
-   8 git buu
-   8 git browse
+  53 git show
+  45 git l       # Show a paginated log with `pretty_git_log`.
+  26 git brr     # List local branches, recently modified first.
+  20 git df      # Fewer characters to type than `diff --name-only`.
+```
+
+## Workflow Examples
+
+List the branches that I've been working on recently and switch to one of them based on a pattern.
+
+```sh
+host:project(anorton/sc-202/fix-misc-bugs)$ git brr
+  main
+  anorton/sc-111/upgrade-dependencies
+* anorton/sc-202/fix-misc-bugs
+  aln/feature-reset-on-failure
+  aln/remove-obsolete-graph
+
+host:project(anorton/sc-202/fix-misc-bugs)$ git sww graph
+Switched to branch 'aln/remove-obsolete-graph'
+
+host:project(aln/remove-obsolete-graph)$ git dfo | xargs code
+```
+
+Fix a commit typo before pushing.
+
+```sh
+git commit -m'Fix tpyo'
+git amend -m'Fix typo'
 ```
