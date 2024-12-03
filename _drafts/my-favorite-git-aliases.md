@@ -15,7 +15,7 @@ All these aliases are in my `~/.gitconfig` file, available at [nonrational/dotfi
 
 ### Short Core Commands
 
-There are 5-6 commands that I use dozens of times a day, and using shorter aliases helps me move faster.
+There are ~6 commands that I use dozens of times a day, and I've shortened them to 1-2 characters each.
 
 ```sh
 git st  # `status`
@@ -24,6 +24,32 @@ git aa  # `add --all`
 git co  # `checkout`
 git pp  # `push`
 git f   # `fetch --tags --prune`
+```
+
+### Pretty Logs
+
+The value of `log --graph` has been diminished since I started using squashed merge commits, but it's still immensely helpful when
+
+```sh
+git r
+git l
+git ra
+git la
+```
+
+### Working with PRs
+
+```sh
+git pro  # Pull Request Open - Open the current branch's PR in the browser, using `hub`.
+git rio  # Rebase Interactive Origin - Rebase the current branch interactively against `origin/main`.
+```
+
+### Working with Branches
+
+```sh
+git bcp  # Branch Copy - Copy the current branch branch name to the clipboard.
+git bmx  # Branch Move Pattern - Apply a sed-like command to rename the current branch.
+git buu  # Branch Unset Upstream - Unset the upstream for the current branch, if renaming a branch post-push.
 ```
 
 ### More "Ignore" Options
@@ -43,10 +69,11 @@ git is-it-just-me # Ignore an untracked file without adding it to `.gitignore`.
 I often work on several branches at the same time and stale branches inevitably clutter up my local environment.
 
 ```sh
-git broom           # Remove all local branches with my personal prefix that do not exist on origin.
-git spring-cleaning # Remove all branches with my personal prefix, both remote and local.
-git everybody-out   # Remove all local branches that do not begin with my personal prefix.
+git broom            # Remove all local branches with my personal prefix that do not exist on origin.
+git spring-cleaning  # Remove all branches with my personal prefix, both remote and local.
+git everybody-out    # Remove all local branches that do not begin with my personal prefix.
 ```
+
 
 ## Frequency Analysis
 
