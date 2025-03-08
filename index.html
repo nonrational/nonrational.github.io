@@ -1,7 +1,22 @@
----
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
-title: Home
----
+<html>
+  <head>
+    <title>nonration.al</title>
+    <link rel="stylesheet" href="morph.css" />
+    <script src="morph.js"></script>
+    <script src="title.js"></script>
+    <meta http-equiv="refresh" content="0; url=https://alannorton.com" />
+  </head>
+  <body>
+    <div id="container">
+      <span id="curr"></span>
+      <span id="prev"></span>
+    </div>
+    <svg id="filters">
+      <defs>
+        <filter id="threshold">
+          <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 255 -140" />
+        </filter>
+      </defs>
+    </svg>
+  </body>
+</html>

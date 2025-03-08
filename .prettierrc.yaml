@@ -1,25 +1,10 @@
 {
   "bracketSameLine": true,
   "jsxSingleQuote": true,
-  "printWidth": 180,
+  "printWidth": 120,
   "semi": false,
   "singleQuote": true,
   "trailingComma": "es5",
-  "plugins": ["@trivago/prettier-plugin-sort-imports"],
-  "importOrder": [
-    "./polyfills",
-    "^react$",
-    "<THIRD_PARTY_MODULES>",
-    "^types",
-    "^elements",
-    "^components",
-    "^helpers|^hooks|^mutations|^routing|^screens|^session|^theme",
-    "^tests",
-    "^__generated__",
-    "^[./]"
-  ],
-  "importOrderSeparation": true,
-  "importOrderSortSpecifiers": true,
   "overrides": [
     {
       "files": ["*.yml", "*.yaml"],

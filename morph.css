@@ -1,0 +1,34 @@
+/* h/t @DotOnion - https://codepen.io/alvarotrigo/pen/eYEqPZa */
+@import url('https://fonts.googleapis.com/css?family=Raleway:600&display=swap');
+
+body {
+  background: #1d1e20;
+  margin: 0px;
+  font-family: 'Raleway', sans-serif;
+}
+
+#container {
+  position: absolute;
+  margin: auto;
+  width: 100vw;
+  height: 80pt;
+  top: 0;
+  bottom: 0;
+
+  filter: url(#threshold) blur(0.6px);
+}
+
+#curr,
+#prev {
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 80pt;
+  color: #0e0f10;
+
+  text-align: center;
+
+  user-select: none;
+}
